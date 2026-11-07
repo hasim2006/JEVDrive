@@ -1,4 +1,4 @@
-# 🏎️ JEVDrive: Autonomous Highway AI Driving Simulation
+# ️ JEVDrive: Autonomous Highway AI Driving Simulation
 
 [![Python Version](https://img.shields.io/badge/python-3.13%2B-blue.svg?logo=python&logoColor=white)](https://www.python.org/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
@@ -12,32 +12,32 @@
 
 ---
 
-## 📌 Table of Contents
-- [✨ Key Highlights](#-key-highlights)
-- [🎬 Visual Showcase & Live Previews](#-visual-showcase--live-previews)
-- [🧠 Autonomous Driving Engines](#-autonomous-driving-engines)
+## Table of Contents
+- [ Key Highlights](#-key-highlights)
+- [ Visual Showcase & Live Previews](#-visual-showcase--live-previews)
+- [ Autonomous Driving Engines](#-autonomous-driving-engines)
   - [1. TypeSafe Jev (Live AI Decision Engine)](#1-typesafe-jev-live-ai-decision-engine)
   - [2. Heuristic Rule-Based Policy (Offline Engine)](#2-heuristic-rule-based-policy-offline-engine)
-- [🏗️ System Architecture](#️-system-architecture)
-- [📊 Cockpit Telemetry HUD Explained](#-cockpit-telemetry-hud-explained)
-- [📐 Mathematical & Safety Formulation](#-mathematical--safety-formulation)
-- [🚀 Quickstart & Installation](#-quickstart--installation)
+- [️ System Architecture](#️-system-architecture)
+- [ Cockpit Telemetry HUD Explained](#-cockpit-telemetry-hud-explained)
+- [ Mathematical & Safety Formulation](#-mathematical--safety-formulation)
+- [ Quickstart & Installation](#-quickstart--installation)
   - [Prerequisites](#prerequisites)
   - [Step-by-Step Setup](#step-by-step-setup)
-- [🎮 Running the Simulation](#-running-the-simulation)
+- [ Running the Simulation](#-running-the-simulation)
   - [Interactive Execution](#interactive-execution)
   - [Headless Benchmarking Mode](#headless-benchmarking-mode)
   - [CLI Reference](#cli-reference)
-- [⌨️ Controls & Keybindings](#️-controls--keybindings)
-- [📁 Project Directory Structure](#-project-directory-structure)
-- [🧪 Testing & Quality Assurance](#-testing--quality-assurance)
-- [📈 Telemetry Logging & Data Collection](#-telemetry-logging--data-collection)
-- [📜 License](#-license)
-- [🤝 Acknowledgments](#-acknowledgments)
+- [️ Controls & Keybindings](#️-controls--keybindings)
+- [ Project Directory Structure](#-project-directory-structure)
+- [ Testing & Quality Assurance](#-testing--quality-assurance)
+- [ Telemetry Logging & Data Collection](#-telemetry-logging--data-collection)
+- [ License](#-license)
+- [ Acknowledgments](#-acknowledgments)
 
 ---
 
-## ✨ Key Highlights
+## Key Highlights
 
 - **Dual Policy Architecture**: Switch seamlessly between real-time cognitive reasoning via the **TypeSafe Jev API** and deterministic, low-latency **Heuristic** algorithms.
 - **Physics-Grounded Simulation**: Built on Farama's `HighwayEnv` 1.12.1, incorporating realistic vehicle kinematics, multi-lane roadway bounds, and Intelligent Driver Model (IDM) traffic agents.
@@ -48,18 +48,18 @@
 
 ---
 
-## 🎬 Visual Showcase & Live Previews
+## Visual Showcase & Live Previews
 
 Both runs below share an identical initial traffic distribution (**Seed 42**) across a 40-second simulation window at 2x simulation speed. Click any preview GIF to watch the complete, high-resolution MP4 video.
 
-| 🟢 TypeSafe Jev (Cognitive AI Decision Engine) | 🔵 Offline Heuristic (Rule-Based Engine) |
+|  TypeSafe Jev (Cognitive AI Decision Engine) |  Offline Heuristic (Rule-Based Engine) |
 | :---: | :---: |
 | [![Jev Driving Preview](media/jev-preview.gif)](media/jev.mp4) | [![Offline Heuristic Preview](media/offline-preview.gif)](media/offline.mp4) |
 | **Real-time API Reasoning** · [Full Video (MP4)](media/jev.mp4) · [Screenshot](media/jev.png) | **Deterministic Heuristic** · [Full Video (MP4)](media/offline.mp4) · [Screenshot](media/offline.png) |
 
 ---
 
-## 🧠 Autonomous Driving Engines
+## Autonomous Driving Engines
 
 JEVDrive implements two distinct driving intelligence policies:
 
@@ -76,7 +76,7 @@ For benchmarking and offline play without requiring an API key:
 
 ---
 
-## 🏗️ System Architecture
+## ️ System Architecture
 
 ```mermaid
 flowchart TD
@@ -109,7 +109,7 @@ flowchart TD
 
 ---
 
-## 📊 Cockpit Telemetry HUD Explained
+## Cockpit Telemetry HUD Explained
 
 The Pygame cockpit HUD renders real-time performance indicators designed after contemporary avionics and autonomous drive telemetry:
 
@@ -124,7 +124,7 @@ The Pygame cockpit HUD renders real-time performance indicators designed after c
 ├─────────────────────────────────────────────────────────────┤
 │ LANE STATUS:                                                │
 │ Lane 1: Gap 48.2m | Rel Speed: +4.2 km/h | Headway: 2.1s    │
-│ Lane 2: [EGO] Gap 18.4m | Closing: -8.1 km/h | TTC: 4.2s ⚠️ │
+│ Lane 2: [EGO] Gap 18.4m | Closing: -8.1 km/h | TTC: 4.2s ️ │
 │ Lane 3: Gap 62.0m | Rel Speed: +12.0 km/h | Headway: 2.8s   │
 │ Lane 4: Gap --    | Clearance Clear                         │
 └─────────────────────────────────────────────────────────────┘
@@ -137,7 +137,7 @@ The Pygame cockpit HUD renders real-time performance indicators designed after c
 
 ---
 
-## 📐 Mathematical & Safety Formulation
+## Mathematical & Safety Formulation
 
 JEVDrive enforces rigorous mathematical headway and collision constraints:
 
@@ -157,7 +157,7 @@ JEVDrive enforces rigorous mathematical headway and collision constraints:
 
 ---
 
-## 🚀 Quickstart & Installation
+## Quickstart & Installation
 
 ### Prerequisites
 - **Operating System**: Windows 10/11, Linux, or macOS.
@@ -204,7 +204,7 @@ JEVDrive enforces rigorous mathematical headway and collision constraints:
 
 ---
 
-## 🎮 Running the Simulation
+## Running the Simulation
 
 ### Interactive Execution
 
@@ -250,7 +250,7 @@ python -m driving_jev.app --headless --policy jev --seed 42 --duration 40
 
 ---
 
-## ⌨️ Controls & Keybindings
+## ️ Controls & Keybindings
 
 | Key | Action | Description |
 | :---: | :--- | :--- |
@@ -262,7 +262,7 @@ python -m driving_jev.app --headless --policy jev --seed 42 --duration 40
 
 ---
 
-## 📁 Project Directory Structure
+## Project Directory Structure
 
 ```text
 JEVDrive/
@@ -294,7 +294,7 @@ JEVDrive/
 
 ---
 
-## 🧪 Testing & Quality Assurance
+## Testing & Quality Assurance
 
 JEVDrive is tested using `pytest` and linted with `ruff`:
 
@@ -311,7 +311,7 @@ ruff format --check src tests
 
 ---
 
-## 📈 Telemetry Logging & Data Collection
+## Telemetry Logging & Data Collection
 
 Every episode automatically writes structured telemetry records into `artifacts/run-<timestamp>.jsonl`:
 - **Start Event**: Seed, initial traffic layout, environment parameters, and active policy.
@@ -320,13 +320,13 @@ Every episode automatically writes structured telemetry records into `artifacts/
 
 ---
 
-## 📜 License
+## License
 
 This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) file for complete details.
 
 ---
 
-## 🤝 Acknowledgments
+## Acknowledgments
 
 - **[HighwayEnv](https://highway-env.farama.org/)** by Farama Foundation for the vehicle physics and multi-agent road simulation.
 - **[Pygame Community Edition (Pygame-ce)](https://pyga.me/)** for the high-performance 2D rendering pipeline.
